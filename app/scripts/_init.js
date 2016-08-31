@@ -73,6 +73,7 @@ export default function($) {
             animation: 'slide',
             direction: 'vertical',
             slideshowSpeed: 5000,
+            animationSpeed: 500,
             easing: 'swing',
             keyboard: false,
             pauseOnHover: false,
