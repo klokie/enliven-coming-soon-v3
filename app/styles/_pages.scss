@@ -20,13 +20,18 @@
     }
   }
 
-  &.become-a-contributor,
+  &.become-a-contributor {
+    background: #aaa;
+    min-height: 0;
+  }
+
   &.contributor-application-form {
     background-image: url("../images/heroes/hero-become-a-contributor.jpg");
   }
 
   .title {
     letter-spacing: -1px;
+    z-index       : 1000;
     @media (min-width: $screen-md) {
       position: absolute;
       bottom  : 0;
@@ -90,7 +95,7 @@
     .table-cell {
       padding-bottom: 2em;
       @media (min-width:$screen-sm-max) {
-        min-height: 16em;
+        min-height: 20em;
       }
     }
   }
@@ -240,6 +245,10 @@
   padding-bottom: 30px;
   padding-left  : 0;
 
+  .table-cell h3 {
+    font-size: 22px;
+  }
+
   .glyphicon {
     font-size     : 32px;
     display       : block;
@@ -384,4 +393,8 @@ div.mce_inline_error {
 iframe {
   border: 0;
   width : 100%;
+
+  // &.resizable {
+  //   min-height: 3400px; // @FIXME
+  // }
 }
