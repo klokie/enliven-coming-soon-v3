@@ -28,7 +28,8 @@ export default function($) {
     return !!(reg.length && navigator.userAgent.match(new RegExp(reg.join('|'), 'i')));
   };
 
-  $('.front').each(function() {
+
+    $('.front').each(function() {
     // vimeofy
     var autoplay = (self.location.port != 9000);
     $('#background').vimeofy({
